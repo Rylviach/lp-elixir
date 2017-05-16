@@ -1,36 +1,112 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+<div class="row">
+  <div class="sixteen columns">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <figure>
+            <image src="<%= static_path @conn, "/images/landing_page/loch-nevis.jpg" %>" />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <image src="<%= static_path @conn, "/images/landing_page/iceland.jpg" %>" />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <image src="<%= static_path @conn, "/images/landing_page/snow.jpg" %>" />
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
-
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
+<div class="row">
+  <div class="eight columns">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim dolor quis placerat pharetra. Vestibulum lorem lorem, mattis eu pretium et, pharetra non nisl. Phasellus risus justo, rutrum hendrerit tincidunt sit amet, tempus ut eros. In dapibus lacinia nibh, aliquam facilisis lorem. Fusce eleifend velit eget faucibus ultrices. Sed congue sollicitudin ultrices. Nulla in viverra elit, eget faucibus orci. Phasellus vel viverra mi, vel ultrices sapien. Fusce non ultrices metus, quis aliquet ante. Sed pellentesque interdum odio sed laoreet. Curabitur suscipit facilisis ultricies. Ut sollicitudin libero eget quam mollis imperdiet.</p>
   </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
-  </div>
+  <aside class="four columns">
+    <div class="sub subscribe clearfix">
+      <header>
+        <h4>Subscribe</h4>
+      </header>
+      <div class="row">
+        <div class="one-half column">
+          <span class="icon rss">&#241;</span>
+          <p>
+            <em>12,346</em>
+            <br>
+            subscribers
+          </p>
+        </div>
+        <div class="one-half column">
+          <span class="icon twitter">&#229;</span>
+          <p>
+            <em>4,834</em>
+            <br>
+            followers
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="sub search">
+      <header>
+        <h4>Search</h4>
+      </header>
+      <form class="search clearfix" action="">
+        <input type="search" placeholder="eg: Cheese" value="">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div class="sub sponsors">
+      <header>
+        <h4>Sponsors</h4>
+      </header>
+    </div>
+    <div class="sub news">
+      <header>
+        <h4>Rylviach News</h4>
+      </header>
+      <form class="subscribe clearfix" action="">
+        <input type="email" placeholder="you@domain.com" value="">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="sub categories">
+      <header>
+        <h4>Categories</h4>
+      </header>
+      <div class="row">
+        <div class="one-half column">
+          <ul class="categories">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="one-half column">
+          <ul class="categories">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Write for us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sub video">
+      <header>
+        <h4>Video of the Week</h4>
+      </header>
+      <figure>
+        <div class="embed"><iframe src="https://player.vimeo.com/video/129482491?title=0&amp;byline=0&amp;portrait=0" frameborder="0" width="400" height="225" webkitAllowFullScreen="" mozallowfullscreen="" allFullScreen=""></iframe></div>
+        <figcaption>
+          <a href="https://vimeo.com/129482491" target="_blank">Looking Glass</a>
+           from
+          <a href="https://vimeo.com/billnewsinger" target="_blank">Bill Newsinger</a>
+           on
+          <a href="https://vimeo.com">Vimeo</a>
+        </figcaption>
+      </figure>
+    </div>
+  </aside>
 </div>
